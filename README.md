@@ -7,6 +7,7 @@ This folder is a static site intended for Vercel deployment.
 - `/` - Home
 - `/privacy` - Privacy Policy
 - `/terms` - Terms & Conditions
+- `/app-ads.txt` - AdMob app-ads.txt verification file
 
 ## Deploy Through GitHub + Vercel
 
@@ -27,3 +28,13 @@ After deploy:
 3. Add `womensbible.vercel.app` (default) or your preferred custom domain.
 
 If you specifically need `womensbible.vercel.xyz`, add that exact domain in Vercel and point DNS for `vercel.xyz` where applicable.
+
+## AdMob Verification Notes
+
+- Required for verification: `app-ads.txt` at the root URL (`https://<domain>/app-ads.txt`).
+- This project includes:
+  - Publisher line: `google.com, pub-2794944930580709, DIRECT, f08c47fec0942fa0`
+  - Ad unit references:
+    - `bfaw_banner` -> `ca-app-pub-2794944930580709/3168042905`
+    - `bfaw_interstitial` -> `ca-app-pub-2794944930580709/5219491178`
+- The ad unit IDs belong in your app's AdMob integration/config, not in Privacy/Terms content.

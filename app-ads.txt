@@ -1,0 +1,5 @@
+# Women's Bible app-ads.txt (AdMob app verification)
+# Ad unit references (for internal tracking only):
+# bfaw_banner: ca-app-pub-2794944930580709/3168042905
+# bfaw_interstitial: ca-app-pub-2794944930580709/5219491178
+google.com, pub-2794944930580709, DIRECT, f08c47fec0942fa0
