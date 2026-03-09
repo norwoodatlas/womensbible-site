@@ -56,6 +56,25 @@ a:hover {
   box-shadow: var(--shadow);
 }
 
+.hero-title-row {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 16px;
+  align-items: center;
+}
+
+.hero-app-icon {
+  width: clamp(72px, 10vw, 108px);
+  height: auto;
+  display: block;
+  border-radius: 22%;
+  box-shadow: 0 12px 26px rgba(185, 94, 131, 0.28);
+}
+
+.hero-title-copy {
+  min-width: 0;
+}
+
 .eyebrow {
   margin: 0 0 10px;
   font-size: 0.78rem;
@@ -252,6 +271,15 @@ h1 {
   .legal {
     border-radius: 20px;
     padding: 20px;
+  }
+
+  .hero-title-row {
+    gap: 12px;
+    align-items: start;
+  }
+
+  .hero-app-icon {
+    width: 64px;
   }
 
   .app-art-grid {
