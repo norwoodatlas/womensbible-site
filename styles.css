@@ -97,6 +97,31 @@ h1 {
   color: var(--muted);
 }
 
+.hero-actions {
+  margin-top: 16px;
+}
+
+.app-store-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  border: 1px solid #c7628d;
+  background: linear-gradient(135deg, #d8749f 0%, #b95e83 100%);
+  color: #fff;
+  font-weight: 700;
+  padding: 11px 18px;
+  letter-spacing: 0.01em;
+  box-shadow: 0 10px 22px rgba(185, 94, 131, 0.28);
+  transition: transform 0.16s ease, box-shadow 0.16s ease;
+}
+
+.app-store-button:hover {
+  text-decoration: none;
+  transform: translateY(-1px);
+  box-shadow: 0 14px 24px rgba(185, 94, 131, 0.3);
+}
+
 .nav-links {
   margin-top: 22px;
   display: flex;
