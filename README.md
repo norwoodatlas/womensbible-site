@@ -1,40 +1,28 @@
-# Women's Bible Website (Vercel)
+# Bible for Men Website (Vercel)
 
-This folder is a static site intended for Vercel deployment.
+Static marketing + legal site for the iOS app.
 
 ## Pages
+- `/` Home + app overview + metadata snapshot
+- `/support` Support contact page
+- `/privacy` Privacy policy
+- `/terms` Terms and conditions
+- `/app-ads.txt` AdMob app-ads verification file
 
-- `/` - Home
-- `/privacy` - Privacy Policy
-- `/terms` - Terms & Conditions
-- `/app-ads.txt` - AdMob app-ads.txt verification file
-
-## Deploy Through GitHub + Vercel
-
-1. Create a repo in your GitHub account (`norwoodatlas`) and push this project.
-2. In Vercel, click **Add New Project** and import that repo.
-3. Set **Root Directory** to `website`.
-4. Framework Preset: **Other**.
-5. Build Command: leave empty.
-6. Output Directory: leave empty.
-7. Deploy.
+## Deploy on Vercel
+1. Push this `website` directory to GitHub.
+2. Import the repo into Vercel.
+3. Set project root to `website`.
+4. Deploy.
 
 ## Domain
+Use your production domain in App Store Connect (for example `bibleformen.app`).
+If you are still using `thewomensbible.vercel.app`, this site content is already rebranded for Bible for Men.
 
-After deploy:
+## app-ads.txt
+Keep this exact line in `website/app-ads.txt`:
 
-1. Open project settings in Vercel.
-2. Go to **Domains**.
-3. Add `womensbible.vercel.app` (default) or your preferred custom domain.
+`google.com, pub-2794944930580709, DIRECT, f08c47fec0942fa0`
 
-If you specifically need `womensbible.vercel.xyz`, add that exact domain in Vercel and point DNS for `vercel.xyz` where applicable.
-
-## AdMob Verification Notes
-
-- Required for verification: `app-ads.txt` at the root URL (`https://<domain>/app-ads.txt`).
-- This project includes:
-  - Publisher line: `google.com, pub-2794944930580709, DIRECT, f08c47fec0942fa0`
-  - Ad unit references:
-    - `bfaw_banner` -> `ca-app-pub-2794944930580709/3168042905`
-    - `bfaw_interstitial` -> `ca-app-pub-2794944930580709/5219491178`
-- The ad unit IDs belong in your app's AdMob integration/config, not in Privacy/Terms content.
+Publish at your domain root:
+- `https://<your-domain>/app-ads.txt`
